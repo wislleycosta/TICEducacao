@@ -1,0 +1,28 @@
+---
+title: "TIC Educação - Exploratory Analysis"
+author: wislley.costa
+output: html_notebook
+---
+
+# Description
+
+This is a exploratory analysis for TIC Educação data sets. This data is from 2010 to 2019 from Cetic.br.
+
+# Imports
+
+```{r import packages, message=FALSE, warning=FALSE, paged.print=FALSE}
+library(haven)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+```
+
+# Datasets
+
+```{r import datasets}
+ict_2019 <- read_sav("EDU2019Urbanas/Alunos/TIC_EDUCACAO_2019_Alunos_base_de_microdados.sav")
+
+head(ict_2019, 10)
+```
+# Processing and Cleaning
+
